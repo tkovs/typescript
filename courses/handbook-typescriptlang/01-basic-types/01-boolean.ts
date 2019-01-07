@@ -1,5 +1,13 @@
 // Boolean
 
-// The most basic datatype is the simple true/false value, which JavaScript and
-// TypeScript call a boolean value.
-let isDone: boolean = false;
+// Representa apenas verdadeiro ou falso. O Javascript e o Typescript chamam
+// de valor boolean.
+
+let temPao: boolean = false;
+let temManteiga: boolean = true;
+
+if (temPao && temManteiga) {
+    console.log("Tem sanduíche");
+} else {
+    console.log("Não tem sanduíche");
+}
