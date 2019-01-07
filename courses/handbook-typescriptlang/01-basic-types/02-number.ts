@@ -1,10 +1,12 @@
 // Number
 
-// As in JavaScript, all numbers in TypeScript are floating point values. These
-// floating point numbers get the type number. In addition to hexadecimal and
-// decimal literals, TypeScript also supports binary and octal literals
-// introduced in ECMAScript 2015.
+// Assim como em Javascript, todos número em Typescript é um valor ponto
+// flutuante. Typescript também suporta valores hexadecimais, decimais, octais
+// e binários. Este tipo é nomeado number.
 let decimal: number = 6;
 let hex: number = 0xf00d;
-let binary: number = 0b1010;
+let binario: number = 0b1010;
 let octal: number = 0o744;
+let flutuante: number = 665.5
+
+console.log("Soma: " + (decimal + hex + binario + octal + flutuante).toString());
