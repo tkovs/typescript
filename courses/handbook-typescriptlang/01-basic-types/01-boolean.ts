@@ -3,11 +3,11 @@
 // Representa apenas verdadeiro ou falso. O Javascript e o Typescript chamam
 // de valor boolean.
 
-let temPao: boolean = false;
-let temManteiga: boolean = true;
+let haveBread: boolean = false;
+let haveMeat: boolean = true;
 
-if (temPao && temManteiga) {
-    console.log("Tem sanduíche");
+if (haveBread && haveMeat) {
+    console.log("There is a burger");
 } else {
-    console.log("Não tem sanduíche");
+    console.log("There is not a burger");
 }
