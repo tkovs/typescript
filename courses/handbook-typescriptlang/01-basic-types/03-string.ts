@@ -1,19 +1,19 @@
 // String
 
-// Another fundamental part of creating programs in JavaScript for webpages and
-// servers alike is working with textual data. As in other languages, we use
-// the type string to refer to these textual datatypes. Just like JavaScript,
-// TypeScript also uses double quotes (") or single quotes (') to surround
-// string data.
+// Assim como em outras linguagens, o tipo string se refere a tipos de dados
+// textuais. Assim como Javascript, Typescript também cerca strings com aspas
+// duplas e aspas simples.
 let color: string = "blue";
 color = 'red';
 
-// You can also use template strings, which can span multiple lines and have embedded expressions. These strings are surrounded by the backtick/backquote (`) character, and embedded expressions are of the form ${ expr }.
+// Template strings permitem declarar uma string com várias linhas e expressões
+// anexadas. São cercadas pelo caracter crase (`), e as expressões anexadas
+// ficam na forma ${expressao}. 
 let fullName: string = `Bob Bobbington`;
 let age: number = 37;
 let sentence: string = `Hello, my name is ${ fullName }.
 I'll be ${ age + 1 } years old next month.`;
 
-// This is equivalent to declaring sentence like so:
+// Isto é o equivalente à seguinte declaração:
 sentence = "Hello, my name is " + fullName + ".\n\n" +
     "I'll be " + (age + 1) + " years old next month.";
