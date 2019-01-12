@@ -1,10 +1,10 @@
 // Object
 
-// object is a type that represents the non-primitive type, i.e. any thing that
-// is not number, string, boolean, symbol, null, or undefined.
+// Object é o tipo que representa tipos de dados não primitivos, i.e. qualquer
+// coisa que não é um número, string, boolean, symbol, null ou undefined.
 
-// With object type, APIs like Object.create can be better represented.
-// For example:
+// Com o tipo Object, APIs como Object.create podem ser melhor representadas.
+// Por exemplo:
 
 declare function create(o: object | null): void;
 
