@@ -1,16 +1,20 @@
-// Null and Undefined
+// Null e Undefined
 
-// In TypeScript, both undefined and null actually have their own types named
-// undefined and null respectively. Much like void, they’re not extremely useful
-// on their own:
+// No tipo script, null e undefined tem seus próprios tipos chamados null e
+// undefined. Assim como o void, não são tão úteis.
 
-// Not much else we can assign to these variables!
+// Nada mais pode ser atribuido a essas variáveis.
 let u: undefined = undefined;
 let n: null = null;
 
-// By default null and undefined are subtypes of all other types. That means you
-// can assign null and undefined to something like number.
+// Por padrão, null e undefined são subtipos de todos os outros tipos. Isto
+// significa que pode-se atribuir null e undefined a algo como um número.
 
-// However, when using the --strictNullChecks flag, null and undefined are only assignable to void and their respective types. This helps avoid many common errors. In cases where you want to pass in either a string or null or undefined, you can use the union type string | null | undefined. Once again, more on union types later on.
+// Contudo, quando usar a flag --strictNullChecks, null e undefined são
+// atribuidas apenas a seus respectivos tipos. Isto ajuda a evitar muitos erros
+// comuns.
+// Em casos que você quer passar ou string ou null ou undefined, você pode usar
+// o tipo union string | null | undefined.
 
-//    As a note: we encourage the use of --strictNullChecks when possible, but for the purposes of this handbook, we will assume it is turned off.
+// Observação: Encoraja-se o uso de --strictNullChecks sempre que possível, mas
+// para propósitos deste estudo, assumi-se que isto está desligado.
