@@ -1,28 +1,30 @@
 // Never 
 
-// The never type represents the type of values that never occur. For instance,
-// never is the return type for a function expression or an arrow function
-// expression that always throws an exception or one that never returns;
-// Variables also acquire the type never when narrowed by any type guards that
-// can never be true.
+// O tipo never representa o tipo de valores que nunca acontecem. Por exemplo,
+// never é o tipo de retorno de uma function expression ou uma arrow function
+// que sempre dispara uma exceção ou uma que nunca retorna.
+// Variáveis podem adquirir o tipo never quando tratadas por qualquer tipo de
+// guards onde nunca podem ser verdadeiras.
 
 // The never type is a subtype of, and assignable to, every type; however, no
 // type is a subtype of, or assignable to, never (except never itself). Even any
 // isn’t assignable to never.
+// O tipo never é um subtipo de, e atribuíel a, qualquer tipo; contudo, nenhum
+// tipo é um subtipo de, ou atribuível a, never. Nem any é atribuível a never.
 
-// Some examples of functions returning never:
+// Alguns exemplos de funções que retornam never:
 
-// Function returning never must have unreachable end point
+// Função retornando never deve ter seu fim inacessível
 function error(message: string): never {
     throw new Error(message);
 }
 
-// Inferred return type is never
+// Never é o tipo de retorno inferido
 function fail() {
     return error("Something failed");
 }
 
-// Function returning never must have unreachable end point
+// Função retornando never deve ter seu fim inacessível
 function infiniteLoop(): never {
     while (true) {
     }
