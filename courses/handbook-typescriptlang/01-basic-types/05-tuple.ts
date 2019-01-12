@@ -1,23 +1,22 @@
 // Tuple
 
-// Tuple types allow you to express an array where the type of a fixed number
-// of element is known, but need not be the same. For example, you may want to
-// represent a value as a pair of a string and a number:
+// Os tipos tupla permitem a você escrever um array onde o tipo de um número
+// fixo de elementos é conhecido, mas não necessariamente o mesmo.
 
-// Declare a tuple type
+// Declare o tipo de tupla
 let x: [string, number];
-// Initialize it
-x = ["hello", 10];
-x = ["wpp", 9];
+// Inicialize isto
+x = ["Joao Vitor", 21];
+x = ["Layse", 20];
 // Initialize it incorrectly
-x = [10, "hello"];
+x = [10, "Algodao Doce"];
 
-// When accessing an element with a known index, the correct type is retrieved:
+// Ao acessar um elemento com um índice conhecido, o tipo correto é recuperado:
 console.log(x[0].substr(1)); // OK
-console.log(x[1].substr(1)); // Error, 'number' does not have 'substr'
+console.log(x[1].substr(1)); // Erro, o tipo 'number' não tem 'substr'
 
-// When accessing an element outside the set of known indices, a union type is
-// used instead:
-x[3] = "world"; // OK, 'string' can be assigned to 'string | number';
-console.log(x[5].toString()); // OK, 'string' and 'number' both have 'toString'
-x[6] = true; // Error, 'boolean' isn't 'string | number'
+// Ao acessar um elemento fora do conjunto de índices conhecidos, o tipo union
+// é utilizado
+x[3] = "world"; // OK, string pode ser atribuido a 'string | number'
+console.log(x[5].toString()); // OK, 'string' e 'number' têm 'toString'
+x[6] = true; // Erro, 'boolean' não é do tipo 'string | number'
