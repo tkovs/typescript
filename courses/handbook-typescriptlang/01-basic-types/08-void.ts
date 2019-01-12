@@ -1,12 +1,11 @@
 // Void
 
-// void is a little like the opposite of any: the absence of having any type at
-// all. You may commonly see this as the return type of functions that do not
-// return a value:
+// O tipo void é meio que o oposto do tipo any: a ausência de ter qualquer
+// tipo. Você pode normalmente ver isso como um tipo de retorno de funções que
+// não retornam um valor.
 function warnUser(): void {
-    console.log("This is a warning message");
+    console.log("Esta mensagem é um aviso");
 }
-
-// Declaring variables of type void is not useful because you can only assign
-// undefined or null to them:
+// Declarar variáveis do tipo voiid não é útil pois podem apenas receber void
+// ou undefined
 let unusable: void = undefined;
