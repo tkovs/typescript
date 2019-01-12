@@ -17,6 +17,6 @@ console.log(x[1].substr(1)); // Erro, o tipo 'number' não tem 'substr'
 
 // Ao acessar um elemento fora do conjunto de índices conhecidos, o tipo union
 // é utilizado
-x[3] = "world"; // OK, string pode ser atribuido a 'string | number'
+x[3] = "Teste"; // OK, string pode ser atribuido a 'string | number'
 console.log(x[5].toString()); // OK, 'string' e 'number' têm 'toString'
 x[6] = true; // Erro, 'boolean' não é do tipo 'string | number'
