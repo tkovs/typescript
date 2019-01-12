@@ -1,22 +1,24 @@
 // Type assertions
 
-// Sometimes you’ll end up in a situation where you’ll know more about a value
-// than TypeScript does. Usually this will happen when you know the type of
-// some entity could be more specific than its current type.
+// Algumas vezes você vai se encontrar em uma situação em que você saberá mais
+// sobre um valor do que o TypeScript. Geralmente, isto vai acontecer quando um
+// você sabe que o tipo de alguma entidade poderia ser mais específico que o
+// tipo atual.
 
-// Type assertions are a way to tell the compiler “trust me, I know what I’m
-// doing.” A type assertion is like a type cast in other languages, but performs
-// no special checking or restructuring of data. It has no runtime impact, and
-// is used purely by the compiler. TypeScript assumes that you, the programmer,
-// have performed any special checks that you need.
+// Type assertions são um modo de dizer ao compilador "confie em mim, eu sei o
+// que eu estou fazendo." Um type assertion é como um type cast em outras
+// linguagens, mas não performa checagens ou reestruturação dos dados. Sem 
+// impacto em tempo de execução, é usado puramente pelo compilador. O
+// TypeScript assume que você, o programador, realizou as checagens especiais
+// necessárias.
 
-// Type assertions have two forms. One is the “angle-bracket” syntax:
+// Type assertions tem duas formas. Uma é a sintaxe "angle-bracket":
 let someValue: any = "this is a string";
 let strLength: number = (<string>someValue).length;
 
-// And the other is the as-syntax:
+// A outra usa a sintase "as"
 let strLength2: number = (someValue as string).length;
 
-// The two samples are equivalent. Using one over the other is mostly a choice
-// of preference; however, when using TypeScript with JSX, only as-style
-// assertions are allowed.
+// Os dois exemplos são equivalentes. Usar um sobre o outro é uma questão de
+// preferência; contudo, ao usar TypeScript com JSX, apenas o estilo "as"
+// permitido.
