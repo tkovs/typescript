@@ -1,5 +1,12 @@
 import { Person } from './person';
-import { Soccer } from './sports';
+import * as sports from './sports';
 
-const Josh = new Person('Josh', new Soccer());
+const Josh = new Person('Josh', new sports.Soccer());
+
+Josh.workout();
+
+Josh.setFavoriteWorkout(new sports.Running());
+Josh.workout();
+
+Josh.setFavoriteWorkout(new sports.Gym());
 Josh.workout();

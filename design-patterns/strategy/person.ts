@@ -2,7 +2,7 @@ import { FavoriteWorkout } from './contracts';
 
 export class Person {
     public name: string;
-    public favoriteWorkout: FavoriteWorkout;
+    private favoriteWorkout: FavoriteWorkout;
 
     constructor(name: string, favoriteWorkout: FavoriteWorkout) {
         this.name = name;
@@ -12,5 +12,9 @@ export class Person {
     workout(): void {
         console.log(`${ this.name } decided to: `);
         this.favoriteWorkout.begin();
+    }
+
+    public setFavoriteWorkout(favoriteWorkout: FavoriteWorkout) {
+        this.favoriteWorkout = favoriteWorkout;
     }
 }
