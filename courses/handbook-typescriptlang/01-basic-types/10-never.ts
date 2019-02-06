@@ -6,12 +6,6 @@
 // Variáveis podem adquirir o tipo never quando tratadas por qualquer tipo de
 // guards onde nunca podem ser verdadeiras.
 
-// The never type is a subtype of, and assignable to, every type; however, no
-// type is a subtype of, or assignable to, never (except never itself). Even any
-// isn’t assignable to never.
-// O tipo never é um subtipo de, e atribuíel a, qualquer tipo; contudo, nenhum
-// tipo é um subtipo de, ou atribuível a, never. Nem any é atribuível a never.
-
 // Alguns exemplos de funções que retornam never:
 
 // Função retornando never deve ter seu fim inacessível
